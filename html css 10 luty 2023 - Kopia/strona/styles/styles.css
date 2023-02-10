@@ -1,0 +1,88 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    background-color: hsl(0, 0%, 95%);
+    line-height: 30px;
+}
+body {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+p:first-letter {
+    color: rgb(243, 29, 29);
+    font-weight:bolder;
+    font-size: 18px; 
+}
+p:before{
+    color: hsl(300, 100%, 50%);
+    content: "Akapit";
+}
+p:first-line {
+    color: rgb(25, 25, 173);
+    
+}
+p:after{
+    color: hsl(300, 100%, 50%);
+    content: "Koniec";
+}
+p::selection, div::selection{
+    background-color: hsl(0, 3%, 57%);
+    color: hsl(0, 0%, 95%);
+}
+a {
+    text-decoration: none;
+    color: hsl(300, 100%, 50%);
+}
+h1 {
+    font-size: 62px;
+    color:rgb(255, 0, 0);
+    text-shadow: 5px 5px 0px black;
+    position: absolute;
+    top: -60px;
+}
+div#boczek {
+ background-color: hsl(60, 100%, 50%, 0.7);
+ padding: 42.0px;
+ width: 150px;
+ text-align: center;
+ border-radius: 0 50em 50em 0;
+ position: fixed;
+ top: 200px;
+ left: -120px;
+ z-index: 100px;
+ transition: 0.3s;
+}
+div#boczek:hover {
+    left: -20px;
+}
+div#duzy {
+    border: 5px solid red;
+    background-color: hsl(0, 0%, 49%, 60%);
+    position: relative;
+    padding: 10px;
+    padding-right: 100px;
+}
+.bloki {
+    width: 150px;
+    height: 150px;
+    background-color: hsl(0, 3%, 37%, 0.9);
+    color: hsl(0, 100%, 50%);
+    border: 2px solid hsl(0, 100%, 50%);
+    position: absolute;
+    right: -100px;
+}
+#miasto {
+    top: 75px;
+}
+#historia {
+    top: 300px;
+}
+#mniejszy {
+    background-color: hsl(0, 0%, 84%);
+    border: 5px dotted hsl(0, 100%, 50%);
+    position: relative;
+    padding: 10px;
+    top: 70px;
+    right: -200px;
+}
